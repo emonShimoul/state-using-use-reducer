@@ -5,6 +5,7 @@ import { portalStore } from '../store/portalStore';
 const Portal = () => {
     const [state, dispatch] = useReducer(portalReducer, portalStore);
     const [name, setName] = useState('');
+
     return (
         <div>
             <h2>Doctors Portal</h2>

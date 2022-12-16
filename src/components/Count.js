@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react';
+
 const countState = {
     clicks: 0,
     users: [],
