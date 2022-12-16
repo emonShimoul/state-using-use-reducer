@@ -2,7 +2,7 @@
 export const portalReducer = (state, action) => {
     switch (action.type) {
         case 'ADD_PATIENT':
-            console.log(action);
+            // console.log(action);
             const adding = {
                 name: action.name,
                 id: action.name + state.patients.length
@@ -15,7 +15,7 @@ export const portalReducer = (state, action) => {
             break;
 
         case 'REMOVE_PATIENT':
-            console.log(action);
+            // console.log(action);
             const removed = state.patients.filter(patient => patient.id !== action.id);
             return {
                 ...state,
